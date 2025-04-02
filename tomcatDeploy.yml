@@ -15,7 +15,7 @@
 
   - name: download war file
     ansible.builtin.get_url:
-      url: https://captain1.jfrog.io/artifactory/cicd-war-generic-local/app-a/webapp-${BUILD_NUMBER}.war"
+     
       url: https://captain1.jfrog.io/artifactory/cicd-war-generic-local/app-a/{{micro_service}}/{{micro_service}}-webapp-{{BUILD_NUMBER}}.war"
       dest: /home/ubuntu/sourcefile/webapp.war
       username: shettyshwetha3193@gmail.com
